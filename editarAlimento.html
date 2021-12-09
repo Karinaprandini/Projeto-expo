@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="sortcut icon" href="src/assets/img/CovidLogo.png" type="image">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>CoviDonation | Adicionar Arrecadação</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Portal do Voluntário</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="gerencial.html">Arrecadações <i
+                                class="fas fa-hand-holding-usd"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="alimentosComprados.html">Alimentos <i class="fas fa-boxes"></i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="usuario.html">Usuários <i class="fas fa-users"></i></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Sair <i class="fas fa-door-open"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container p-3" style="margin-top: 15px;">
+            <div class="card p-3 shadow">
+                <h3><b>Editar alimento</b></h3>
+                <hr />
+
+                <form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="data">Data da Compra</label>
+                                    <input type="date" class="form-control" id="data">
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="quantia">Nome do Alimento</label>
+                                    <input type="text" min="1" step="any" class="form-control" id="quantia"
+                                    >  
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="quantia">Quantidade</label>
+                                    <input type="number" min="1" step="any" class="form-control" id="quantia"
+                                    >    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="data">Valor Unitário</label>
+                                    <input type="number" class="form-control" id="data"  placeholder="R&#36;0.000,00">
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="text-right" style="margin-top: 35px;">
+                                    <a href="alimentosComprados.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Retornar</a>
+                                    <button type="button" class="btn btn-info">Editar <i class="fas fa-pencil-alt"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </form>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="bg-light fixed-bottom">
+
+        <p class="text-center font">Portal do Voluntário <br>CoviDonation - Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/f02493a03c.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
